@@ -112,6 +112,12 @@ Then just pass in the class names of the icons that you want to use as follows:
 	});
 
 
+# Special Thanks
+
+I'd like to thank [FontAwesome] for a wonderful job on the web font icons. And I used 
+[Fontello] to create the web fonts used in this plugin by the way.
+
+
 # License
 
 __The MIT License (MIT)__
@@ -126,5 +132,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [Fontello]: http://fontello.com/
 [FontAwesome]: http://fortawesome.github.io/Font-Awesome/
-[demos]: http://www.google.com/
+[demos]: https://github.com/jaunesarmiento/prevue.js/tree/master/examples/
 [Jaune Sarmiento]: http://jaunesarmiento.me/
