@@ -91,14 +91,14 @@ a default value.
 * `offsetY` - Same as `offsetX` but for vertical positioning.
 
 
-# Browser Compatibility
+## Browser Compatibility
 
 Prevue.js utilizes web fonts so it should work on all modern browsers with
 support for web fonts. Check out [Can I use] for the browser compatibility
 table.
 
 
-# Other Notes
+## Other Notes
 
 Prevue.js only uses two icons from [FontAwesome], namely, `icon-eye` and `icon-eye-off`.
 In cases that you want to use the whole FontAwesome font set (or use a different one), 
@@ -116,13 +116,13 @@ Then just pass in the class names of the icons that you want to use as follows:
 	});
 
 
-# Special Thanks
+## Special Thanks
 
 I'd like to thank [FontAwesome] for a wonderful job on the web font icons. And I used 
 [Fontello] to create the web fonts used in this plugin by the way.
 
 
-# License
+## License
 
 __The MIT License (MIT)__
 Copyright (c) 2013 [Jaune Sarmiento]
