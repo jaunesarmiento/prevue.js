@@ -16,8 +16,34 @@ Check out the [demos].
 
 ## Usage
 
-Prevue.js is very easy to use. You just add a class to your password
-fields and call `prevue()` on those elements.
+Prevue.js is very easy to use. Just add the following to your HTML:
+
+	// Font icon styles
+	<link rel="stylesheet" href="css/font-awesome-eyes.css">
+
+	// In case you need jQuery on the fly
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	// Then add Prevue.js
+	<script src="js/jquery.prevue-1.0.0.js">
+
+Then copy the `font` directory to your project's root directory so it looks like:
+
+	your-project
+	|-- css
+	|   `-- font-awesome-eyes.css
+	|-- font
+	|   |-- font-awesome-eyes.eot
+	|   |-- font-awesome-eyes.svg
+	|   |-- font-awesome-eyes.ttf
+	|   `-- font-awesome-eyes.woff
+	`-- js
+	    `-- jquery.prevue-1.0.0.js
+
+It doesn't necessarily have to be like the directory structure. But you might
+have to modify `font-awesome-eyes.css` if your directory structure is different.
+
+Then just add a class to your password fields and call `prevue()` on those elements.
 
 __Markup__
 	
