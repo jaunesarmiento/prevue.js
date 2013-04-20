@@ -1,7 +1,7 @@
 # Prevue.js
 
 Prevue.js is a jQuery password-preview plugin that works like
-BlackBerry's password-preview. It is very useful for mobile web
+BlackBerry Z10's password-preview. It is very useful for mobile web
 applications where the chances of entering your password incorrectly
 is more likely to happen.
 
@@ -26,6 +26,9 @@ Prevue.js is very easy to use. Just add the following to your HTML:
 
 	// Then add Prevue.js
 	<script src="js/jquery.prevue-1.0.0.js">
+
+__Note:__ You'll need jQuery version 1.9.0+ for this to work. Since lower versions
+of jQuery don't allow the modification of the type attribute.
 
 Then copy the `font` directory to your project's root directory so it looks like:
 
@@ -91,7 +94,8 @@ a default value.
 # Browser Compatibility
 
 Prevue.js utilizes web fonts so it should work on all modern browsers with
-support for it.
+support for web fonts. Check out [Can I use] for the browser compatibility
+table.
 
 
 # Other Notes
@@ -104,11 +108,11 @@ you'll need to replace the included `font-awesome-eyes.*` font files and
 Then just pass in the class names of the icons that you want to use as follows:
 	
 	// Given that the icons you want to use has the class names: 
-	// "class-off" and "class-on"
+	// "eye-open" and "eye-close"
 
 	$('.selector').prevue({
-		fontIconClassNameOff: 'class-off',
-		fontIconClassNameOn: 'class-on',
+		fontIconClassNameOff: 'eye-open',
+		fontIconClassNameOn: 'eye-close',
 	});
 
 
@@ -134,3 +138,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [FontAwesome]: http://fortawesome.github.io/Font-Awesome/
 [demos]: https://github.com/jaunesarmiento/prevue.js/tree/master/examples/
 [Jaune Sarmiento]: http://jaunesarmiento.me/
+[Can I use]: http://caniuse.com/fontface
