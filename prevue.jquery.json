@@ -1,0 +1,39 @@
+{
+    "name": "prevue",
+    "title": "Prevue.js",
+    "description": "jQuery plugin for previewing password field values. It works like BlackBerry Z10's password preview.",
+    "keywords": [
+        "prevue",
+        "preview",
+        "form",
+        "password",
+        "font",
+        "fonts",
+        "icon",
+        "icons"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Jaune Sarmiento",
+        "url": "http://jaunesarmiento.me"
+    },
+    "maintainers": [
+        {
+            "name": "Jaune Sarmiento",
+            "email": "hawnecarlo@gmail.com",
+            "url": "http://jaunesarmiento.me"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jaunesarmiento/prevue.js/blob/master/license.txt"
+        }
+    ],
+    "bugs": "https://github.com/jaunesarmiento/prevue.js/issues",
+    "homepage": "https://github.com/jaunesarmiento/prevue.js",
+    "docs": "https://github.com/jaunesarmiento/prevue.js",
+    "dependencies": {
+        "jquery": ">=1.9"
+    }
+}
