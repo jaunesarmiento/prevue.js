@@ -1,12 +1,12 @@
 /*
- * Prevue.js jQuery Password Previewer v1.0.0
+ * Prevue.js jQuery Password Previewer v1.0.1
  * http://jaunesarmiento.me/prevuejs
  *
  * Copyright 2013, Jaune Sarmiento
  * Released under the MIT license
  * http://www.opensource.org/licenses/mit-license.php
  *
- * Date: Sat Apr 20, 2013
+ * Date: Sat Apr 30, 2013
  */
 
 (function($) {
