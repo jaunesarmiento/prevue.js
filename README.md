@@ -25,7 +25,7 @@ Prevue.js is very easy to use. Just add the following to your HTML:
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 	// Then add Prevue.js
-	<script src="js/jquery.prevue-1.0.0.js">
+	<script src="js/jquery.prevue.min.js">
 
 __Note:__ You'll need jQuery version 1.9.0+ for this to work. Since lower versions
 of jQuery don't allow the modification of the type attribute.
@@ -41,7 +41,7 @@ Then copy the `font` directory to your project's root directory so it looks like
 	|   |-- font-awesome-eyes.ttf
 	|   `-- font-awesome-eyes.woff
 	`-- js
-	    `-- jquery.prevue-1.0.0.js
+	    `-- jquery.prevue.min.js
 
 It doesn't necessarily have to be like the directory structure. But you might
 have to modify `font-awesome-eyes.css` if your directory structure is different.
@@ -125,6 +125,7 @@ I'd like to thank [FontAwesome] for a wonderful job on the web font icons. And I
 ## License
 
 __The MIT License (MIT)__
+
 Copyright (c) 2013 [Jaune Sarmiento]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
