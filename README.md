@@ -137,6 +137,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [Fontello]: http://fontello.com/
 [FontAwesome]: http://fortawesome.github.io/Font-Awesome/
-[demos]: https://github.com/jaunesarmiento/prevue.js/tree/master/examples/
+[demos]: http://jaunesarmiento.me/prevue.js/
 [Jaune Sarmiento]: http://jaunesarmiento.me/
 [Can I use]: http://caniuse.com/fontface
