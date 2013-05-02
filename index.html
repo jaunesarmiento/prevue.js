@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prevue.js Bootstrap Examples</title>
+    
+    <link rel="stylesheet" href="../src/css/font-awesome-eyes.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .com { color: #93a1a1; }
+        .lit { color: #195f91; }
+        .pun, .opn, .clo { color: #93a1a1; }
+        .fun { color: #dc322f; }
+        .str, .atv { color: #D14; }
+        .kwd, .prettyprint .tag { color: #1e347b; }
+        .typ, .atn, .dec, .var { color: teal; }
+        .pln { color: #48484c; }
+
+        pre {
+          font-size: 12px;
+        }
+        .prettyprint {
+          padding: 8px;
+          background-color: #f7f7f9;
+          border: 1px solid #e1e1e8;
+        }
+        .prettyprint.linenums {
+          -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+             -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+                  box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+        }
+
+        /* Specify class=linenums on a pre to get line numbering */
+        ol.linenums {
+          margin: 0 0 0 33px; /* IE indents via margin-left */
+        }
+        ol.linenums li {
+          padding-left: 12px;
+          color: #bebec5;
+          line-height: 20px;
+          text-shadow: 0 1px 0 #fff;
+        }
+
+        .wrapper {
+            width: 960px;
+            margin: 20px auto;
+        }
+
+        footer {
+            padding: 20px 0;
+            margin: 0 auto;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/prettify.js"></script>
+    <script src="../src/js/jquery.prevue.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="page-header">
+            <h1>Prevue.js Twitter Bootstrap Examples</h1>
+            <p>Here are some examples of <a href="https://github.com/jaunesarmiento/prevue.js" target="_blank">Prevue.js</a> on <a href="http://twitter.github.io/bootstrap/index.html" target="_blank">Bootstrap</a> by Twitter</p>
+        </div>
+
+        <h2>Basic Usage</h2>
+        <p><a href="https://github.com/jaunesarmiento/prevue.js" target="_blank">Prevue.js</a> is very easy to use. Just add the following to your HTML:</p>
+
+        <pre class="prettyprint linenum">
+// Font icon styles
+&lt;link rel="stylesheet" href="css/font-awesome-eyes.css"&gt;
+
+// In case you need jQuery on the fly
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+
+// Then add Prevue.js
+&lt;script src="js/jquery.prevue-1.0.0.js"&gt;</pre>
+
+        <br />
+        <p>Then copy the <code>font</code> directory to your project's root directory so it looks like:</p>
+
+<pre>
+your-project
+|-- css
+|   `-- font-awesome-eyes.css
+|-- font
+|   |-- font-awesome-eyes.eot
+|   |-- font-awesome-eyes.svg
+|   |-- font-awesome-eyes.ttf
+|   `-- font-awesome-eyes.woff
+`-- js
+    `-- jquery.prevue-1.0.0.js</pre>
+
+        <p>It doesn't necessarily have to be like the directory structure. But you might have to modify <code>font-awesome-eyes.css</code> if your directory structure is different.</p>
+
+        <p>Then just add a class to your password fields and call <code>prevue()</code> on those elements.</pre></p>
+
+        <br />
+        <h3>Simple Example</h3>
+        <p>Below is a simple example on using Prevue.js.</p>
+        <div class="well">
+            <label for="password">Try clicking the eye icon and start typing</label>
+            <input type="password" class="preview-password" id="password">
+        </div>
+
+        <p>Here's the markup for the output above:</p>
+        <pre class="prettyprint">
+&lt;label for="password"&gt;Try clicking the eye icon and start typing&lt;/label&gt;
+&lt;input type="password" class="preview-password" id="password"&gt;</pre>
+
+        <p>And here's the JavaScript:</p>
+        <pre class="prettyprint">
+$(document).ready(function(){
+  $('.preview-password').prevue();
+});</pre>
+
+        
+        <br />
+        <h2>Customizing Prevue.js</h2>
+
+        <h3>Colors</h3>
+        <p>You can also change the color of the icon by passing a color value to its options. As long as it's a valid CSS color value, it will work.</p>
+
+        <div class="well">
+            <label>Here's a red one</label>
+            <input type="password" class="preview-password-red">
+
+            <label>You can also use hex colors</label>
+            <input type="password" class="preview-password-hex" placeholder="I'm using #44ABAB">
+
+            <label for="password">..or RGB/RGBA</label>
+            <input type="password" class="preview-password-rgb" placeholder="I'm using rgb(33,33,33)">
+            <input type="password" class="preview-password-rgba" placeholder="rgba(100,100,100, 0.5)">
+
+        </div>
+
+        <p>JavaScript:</p>
+<pre class="prettyprint">
+$('.preview-password-red').prevue({
+  color: 'red'
+});
+
+$('.preview-password-hex').prevue({
+  color: '#44ABAB'
+});
+
+$('.preview-password-rgb').prevue({
+  color: 'rgb(33,33,33)'
+});
+
+$('.preview-password-rgba').prevue({
+  color: 'rgba(100,100,100,0.5)'
+});  </pre>
+
+        <br />
+        <h3>Other Options</h3>
+        <p>You can also make the icon larger when you're using large password fields through the <code>fontSize</code> option. Just make sure the value is in pixels.</p>
+
+        <div class="well">
+            <label>I have a large preview button</label>
+            <input type="password" class="preview-password-large">
+        </div>
+
+        <p>JavaScript:</p>
+<pre class="prettyprint">
+$('.preview-password-large').prevue({
+    fontSize: 24
+});</pre>
+
+
+        <footer>
+            Copyright &copy; 2013 <a href="http://jaunesarmiento.me/" target="_blank">Jaune Sarmiento</a>
+        </footer>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            window.prettyPrint && prettyPrint();
+
+            $('.preview-password').prevue();
+            $('.preview-password-red').prevue({
+                color: 'red'
+            });
+
+            $('.preview-password-hex').prevue({
+                color: '#44ABAB'
+            });
+
+            $('.preview-password-rgb').prevue({
+                color: 'rgb(33,33,33)'
+            });
+
+            $('.preview-password-rgba').prevue({
+                color: 'rgba(100,100,100,0.5)'
+            });
+
+            $('.preview-password-large').prevue({
+                fontSize: 24
+            });
+        });
+    </script>
+</body>
