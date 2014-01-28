@@ -1,16 +1,16 @@
 /*
- * Prevue.js jQuery Password Previewer v1.0.1
+ * Prevue.js jQuery Password Previewer v1.0.2
  * http://jaunesarmiento.me/prevuejs
  *
  * Copyright 2013, Jaune Sarmiento
  * Released under the MIT license
  * http://www.opensource.org/licenses/mit-license.php
  *
- * Date: Sat Apr 30, 2013
+ * Date: Wed Jan 29, 2014
  */
 
 (function($) {
-	
+
 	// Enables console.log() in all browsers for error messages
 	window.log = function() {
 		log.history = log.history || [];
@@ -21,7 +21,7 @@
 	};
 
 	$.fn.prevue = function(settings) {
-		
+
 		/**
 		 * Default settings
 		 *
@@ -30,9 +30,9 @@
 		 * string    fontSize                 The size of the icon
 		 * string    color                    The color of the icon; in hex format (e.g #FFF or #000000). You may
 		 *                                    also use rgb() and rgba() values here
-		 * int       offsetX                  X-offset from the end of the input element; useful when the preview 
+		 * int       offsetX                  X-offset from the end of the input element; useful when the preview
 		 *                                    button's position is off
-		 * int       offsetY                  Y-offset from the top of the input element; useful when the preview 
+		 * int       offsetY                  Y-offset from the top of the input element; useful when the preview
 		 *                                    button's position is off
 		 */
 
@@ -52,16 +52,16 @@
 
 			// Selected node
 			var $o = $(this);
-			
+
 			// Name of the selected node
 			var node = this.nodeName.toLowerCase();
-			
+
 			// If the node is actually an input[type="password"] element
 			if (node == "input" && this.type == "password") {
-				
+
 				// Build the preview button
 				var $input = $o,
-					
+
 					$previewIcon = $('<i>')
 						.css({ 'font-size': defaults.fontSize + 'px' })
 						.addClass('prevue-icon')
