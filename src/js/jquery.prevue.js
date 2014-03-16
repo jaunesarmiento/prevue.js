@@ -34,6 +34,7 @@
 		 *                                    button's position is off
 		 * int       offsetY                  Y-offset from the top of the input element; useful when the preview
 		 *                                    button's position is off
+		 * int       zIndex                   z-index
 		 */
 
 		var defaults = {
@@ -42,7 +43,8 @@
 			fontSize: '16',
 			color: '#999',
 			offsetX: 5,
-			offsetY: 0
+			offsetY: 0,
+			zIndex: 0
 		};
 
 		// Merge the user settings with the defaults (if passed)
@@ -80,7 +82,8 @@
 							'right': parseInt(0 + defaults.offsetX) + 'px',
 							'height': parseInt(height + defaults.offsetY) + 'px',
 							'line-height': (height + defaults.offsetY) + 'px',
-							'color': defaults.color
+							'color': defaults.color,
+							'z-index': parseInt(0 + defaults.zIndex)
 						}),
 
 					$wrapper = $('<span>')
